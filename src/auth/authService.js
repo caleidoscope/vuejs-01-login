@@ -3,7 +3,7 @@ import { EventEmitter } from "events";
 //import authConfig from "../../auth_config.json";
 
 const webAuth = new auth0.WebAuth({
-  domain: process.env.VUE_APP_AUTHODOMAIN,
+  domain: process.env.VUE_APP_DOMAIN,
   redirectUri: `${window.location.origin}/callback`,
   clientID: process.env.VUE_APP_CLIENTID,
   responseType: "id_token",
